@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url('../assets/fonts/Gilroy-Thin.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url('../assets/fonts/Gilroy-Semibold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url('../assets/fonts/Gilroy-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url('../assets/fonts/gilroy-medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('../assets/fonts/Gilroy-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: "SF Pro Text";
+    src: url('../assets/fonts/SFProText-Regular.ttf');
+    font-weight: 400;
+}

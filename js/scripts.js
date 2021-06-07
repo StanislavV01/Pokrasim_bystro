@@ -16,8 +16,60 @@ $('.portfolio-slider').slick({
 $('.insta-slider').slick({
     slidesToShow: 3,
     arrows:true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true
+          
+        }
+      },
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
 
   });
+
+  const hamburgerBtn = document.querySelector('.c-line'),
+  hamburgerMenu = document.querySelector('.mobile'),
+  page = document.querySelector('body');
+
+  hamburgerBtn.addEventListener('click', function(e){
+
+  e.preventDefault();
+  page.classList.add('is_active_w');
+    
+  if(this.classList.contains('is_active')){
+     this.classList.remove('is_active');
+     hamburgerMenu.classList.remove('menu_active');
+     
+  
+  
+  }else{
+     this.classList.add('is_active');
+     hamburgerMenu.classList.add('menu_active');
+    
+  
+     
+  }
+  
+  
+  
+  
+  });
+
+
+
 
   lightGallery(document.getElementById('animated-thumbnials'), {
     thumbnail:true,
